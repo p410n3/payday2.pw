@@ -152,6 +152,7 @@
 .angled-triangle {
     position: absolute;
     width: calc(100% + 10px);
+    margin-left: -10px;
 }
 
 .angled-bottom {
