@@ -1,0 +1,80 @@
+/* unique */
+.nav-bar {
+    height: 50px;
+    color: white;
+
+    position: fixed;
+    z-index: 100;
+    top: 0%;
+    width: 100%;
+}
+
+.grid {
+    margin-top: 50px;
+    background: #444;
+}
+
+.header {
+    position: relative;
+
+    width: 100%;
+    height: calc(95vh - 50px);
+    max-height: 600px;
+
+    background-image: url(../img/header-bg.jpg);
+    background-position: 40% 0;
+    background-size: cover;
+}
+
+.header-text {
+    margin-top: 20%;
+    padding-right: 0%;
+}
+
+.header-text-p {
+    font-family: Road-Rage;
+    text-align: center;
+
+    /* font size missing */
+}
+
+@media (min-width: 468px) {
+    .header-text {
+        padding-right: 33%;
+    }
+    
+    .header-text-p {
+        text-align: right
+    }
+}
+
+.header-text-p::first-line {
+   /*half of the OG one*/
+}
+
+.footer {
+
+}
+
+/* reusable */
+.gray-bg-grad {
+    background: rgb(34,34,34);
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(35,35,35,1) 35%, rgba(34,34,34,1) 100%);
+}
+
+.angled-triangle {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 10px);
+
+    margin-bottom: -1px;
+    margin-left: -10px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-pd2-blue {
+    color: #0593e9;
+}
