@@ -46,6 +46,17 @@ body {
     flex-direction: row;
 }
 
+.row-responsive {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 468px) {
+    .row-responsive {
+        flex-direction: row;
+    }
+}
+
 .col {
     display: flex;
     flex-direction: column;
