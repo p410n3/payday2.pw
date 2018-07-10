@@ -52,6 +52,10 @@ body {
     transform: skewY(-2deg);
 }
 
+.fixed-bg {
+    background-attachment: fixed;
+}
+
 .nav-bar {
     min-height: 70px;
 
