@@ -1,14 +1,64 @@
-/* unique */
+/* some document wide stuff */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Road-Rage;
+    src: url(../fonts/road-rage.otf);
+}
+
+/* Structure */
+
+.full-width {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-responsive {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 468px) {
+    .row-responsive {
+        flex-direction: row;
+    }
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skew {
+    transform: skewY(2deg);
+}
+
+.unskew {
+    transform: skewY(-2deg);
+}
+
 .nav-bar {
     min-height: 70px;
-    color: white;
 
     position: fixed;
     z-index: 100;
     top: 0%;
     width: 100%;
-
-    font-family: 'Oswald', sans-serif;
 
     display: flex;
     justify-content: center;
@@ -35,23 +85,17 @@
 
     text-decoration: none;
 
-    color: white;
-
     font-size: 22px;
 }
 
 .nav-link:hover {
-    color: #aaa;
     margin-top: -2px;
-}
-
-.grid {
-    margin-top: 70px;
-    background: #444;
 }
 
 .header {
     position: relative;
+    margin-top: 70px;
+    margin-bottom: -2%; /* hiding skew */
 
     width: 100%;
     height: calc(50vw - 50px);
@@ -67,7 +111,7 @@
 
 .header-text {
     width: 100%;
-    height: 90%;
+    height: 85%;
 
     padding-left: 20%;
     padding-right: 20%;
@@ -85,15 +129,11 @@
 }
 
 .header-text-p {
-    font-family: Road-Rage;
-
     font-size: 40px;
     margin: 0;
 
     text-shadow: 1px 1px black; 
     text-align: center;
-
-    /* font size missing */
 }
 
 .header-text-p-double {
@@ -126,14 +166,20 @@
 }
 
 .content {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-
     font-size: 18px;
 }
 
+.content-wrap {
+    margin-top: 30px;
+    margin-bottom: 50px; /* more because of the skew */
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    max-width: 820px;
+}
+
 .content-header {
-    font-family: 'Oswald', sans-serif;
     font-weight: 100;
 
     text-transform: uppercase;
@@ -141,31 +187,15 @@
 
 .footer {
     position: relative;
+    height: 80px;
+
+    margin-top: 30px;
 }
 
-/* reusable */
-.gray-bg-grad {
+/* Skin */
+.bg-gray-grad{
     background: rgb(34,34,34);
     background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(35,35,35,1) 35%, rgba(34,34,34,1) 100%);
-}
-
-.angled-triangle {
-    position: absolute;
-    width: calc(100% + 10px);
-    margin-left: -10px;
-}
-
-.angled-bottom {
-    bottom: 0;
-
-    margin-bottom: -1px;
-    margin-left: -10px;
-}
-
-.angled-top {
-    top: 0;
-
-    margin-top: -1px;
 }
 
 .text-white {
@@ -174,4 +204,30 @@
 
 .text-pd2-blue {
     color: #0593e9;
+}
+
+.hover-light-gray:hover {
+    color: #aaaaaa;
+}
+
+.bg-dark-gray {
+    background: #444;
+}
+
+.bg-light-gray {
+    background: #888;
+}
+
+/* ToDO: Add font fallbacks */
+
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-road-rage {
+    font-family: Road-Rage;
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
 }
