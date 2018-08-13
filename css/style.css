@@ -69,6 +69,12 @@ body {
     align-items: center;
 }
 
+.all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-bar {
     min-height: 70px;
 
@@ -76,6 +82,8 @@ body {
     z-index: 100;
     top: 0%;
     width: 100%;
+
+    max-width: 100vw;
 
     display: flex;
     justify-content: center;
@@ -160,7 +168,6 @@ body {
 }
 
 .hamburger-line {
-    background-color: white;
     height: 4px;
     width: 100%;
 
@@ -174,6 +181,7 @@ body {
     gets displayed when the hamburger 
     is :checked at mobile 
 */
+
 .nav-hamburger-input ~ .nav-hamburger-toggle-area {
     display: none;
 }
@@ -214,8 +222,7 @@ body {
     width: 100%;
     height: 85%;
 
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 0;
 
     display: flex;
     flex-direction: column-reverse;
@@ -223,6 +230,13 @@ body {
     align-items: center;
 
     line-height: 0.8;
+}
+
+@media (min-width: 468px) {
+    .header-text {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 }
 
 .header-text-p::before {
@@ -274,16 +288,40 @@ body {
     margin-top: 50px;
     margin-bottom: 80px; /* more because of the skew */
 
-    padding-left: 20px;
-    padding-right: 20px;
-
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1000px;
 }
 
 .h1-header {
     font-weight: 100;
 
     text-transform: uppercase;
+}
+
+.about-wrap {
+    padding-top: 20px; 
+    justify-content: space-around;
+}
+
+.about-icon {
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 150px;
+
+    font-size: 110px;
+}
+.about-sub-text {
+    margin-top: 0;
+    font-size: 40px;
+
+    text-transform: uppercase;
+
+    font-weight: 100;
 }
 
 .footer {
@@ -302,6 +340,10 @@ body {
     
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* Skin */
@@ -327,7 +369,7 @@ body {
 }
 
 .shadow-box-black {
-    box-shadow: 0 3px 7px black;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.50);
 }
 
 .text-white {
@@ -342,12 +384,22 @@ body {
     color: #aaaaaa;
 }
 
+.about-circle {
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
 .bg-dark-gray {
     background: #373737;
 }
 
 .bg-light-gray {
     background: #676767;
+}
+
+.bg-white {
+    background-color: white;
 }
 
 /* ToDO: Add font fallbacks */
