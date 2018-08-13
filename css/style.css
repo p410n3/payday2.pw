@@ -80,8 +80,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
 }
 
 .nav-wrapper {
@@ -166,10 +164,16 @@ body {
     height: 4px;
     width: 100%;
 
+    box-shadow: 2px 2px;
+
     border-radius: 2px;
 }
 
-/* All this gets displayed when the hamburger is on at mobile */
+/* 
+    nav-hamburger-toggle-area
+    gets displayed when the hamburger 
+    is :checked at mobile 
+*/
 .nav-hamburger-input ~ .nav-hamburger-toggle-area {
     display: none;
 }
@@ -179,16 +183,14 @@ body {
 }
 
 @media (min-width: 768px) {
-/* All this gets displayed when the hamburger is on at mobile */
-    .nav-hamburger-input:checked ~ .nav-hamburger-toggle-area {
-        display: block;
-    }
-
     .nav-hamburger-input ~ .nav-hamburger-toggle-area {
         display: block;
     }
-}
 
+    .nav-hamburger-input:checked ~ .nav-hamburger-toggle-area {
+        display: block;
+    }
+}
 
 .header {
     position: relative;
@@ -278,9 +280,7 @@ body {
     max-width: 1200px;
 }
 
-.content-header {
-    text-shadow: 3px 3px black;
-
+.h1-header {
     font-weight: 100;
 
     text-transform: uppercase;
@@ -322,6 +322,14 @@ body {
     background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(35,35,35,1) 35%, rgba(34,34,34,1) 100%);
 }
 
+.shadow-text-black {
+    text-shadow: 3px 3px 3px black;
+}
+
+.shadow-box-black {
+    box-shadow: 0 3px 7px black;
+}
+
 .text-white {
     color: white;
 }
@@ -335,11 +343,11 @@ body {
 }
 
 .bg-dark-gray {
-    background: #444;
+    background: #373737;
 }
 
 .bg-light-gray {
-    background: #888;
+    background: #676767;
 }
 
 /* ToDO: Add font fallbacks */
