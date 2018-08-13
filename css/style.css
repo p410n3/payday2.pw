@@ -391,11 +391,13 @@ body {
 }
 
 .bg-dark-gray {
-    background: #373737;
+    background: #373737; /* fallback */
+    background: radial-gradient(circle, #373737,#292929);
 }
 
 .bg-light-gray {
-    background: #676767;
+    background: #676767; /* fallback */
+    background: radial-gradient(circle,#575757, #676767);
 }
 
 .bg-white {
