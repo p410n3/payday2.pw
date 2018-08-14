@@ -232,10 +232,17 @@ body {
     line-height: 0.8;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 468px) {
     .header-text {
         padding-left: 20%;
         padding-right: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-text {
+        padding-left: 20%;
+        padding-right: 10%;
     }
 }
 
