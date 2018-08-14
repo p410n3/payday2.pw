@@ -269,6 +269,20 @@ body {
     }
 }
 
+@media (min-width: 768px) {  
+    .header-text {
+        flex-direction: row-reverse;
+    }
+    
+    .header-text-p {
+        font-size: 80px;
+    }
+
+    .header-text-p-double {
+        font-size: 160px;
+    }
+}
+
 @media (min-width: 920px) {  
     
     .header-text-p {
