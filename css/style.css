@@ -199,8 +199,8 @@ body {
     min-height: 400px;
     max-height: 80vh;
 
-    background-image: url(../img/header-bg.jpg);
-    background-position: 40% 0;
+    background-image: url(../img/header-bg-2-OG.jpg);
+    /* background-position: 40% 0;*/
     background-size: cover;
 
     display: flex;
@@ -291,6 +291,9 @@ body {
 
 .content {
     font-size: 18px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .content-wrap {
@@ -303,35 +306,73 @@ body {
     padding: 20px;
 }
 
-/* These Pseudo elemnets are there to cut the border */
-.cutter {
-    content: "";
-
+/* These elements elemenets are there to cut the border */
+.cutted {
     box-sizing: border-box;
-
     position: absolute;
 
-    height: calc(100% + 2px);
-    width: 80%;
-
-    top: -1px;
-
-    /* center horizontally */
-    left: 10%;
-    right: 10%;
+    border-style: solid;
 
     z-index: 1;
 
-    /* Put to Skin area */
+    pointer-events: none;
+}
 
-    border-bottom: 8px solid #373737;
-    border-top: 8px solid #373737;
+.cutted-top-bot {
+    height: calc(100% + 8px);
+    width: calc(100% - 160px);
+
+    top: -4px;
+
+    /* center horizontally */
+    left: 80px;
+    right: 80px;
+
+    border-top-width: 8px; 
+    border-bottom-width: 8px;
+    
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.cutted-left-right {
+    height: calc(100% - 160px);
+    width: calc(100% + 8px);
+
+    left: -4px;
+
+    /* center vertically */
+    top: 80px;
+    bottom: 80px;
+
+    border-left-width: 8px; 
+    border-right-width: 8px; 
+
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.border-color-dark-gray {
+    border-top-color: #373737;
+    border-left-color: #373737;
+    border-right-color: #373737;
+    border-bottom-color: #373737;
+}
+
+.border-color-darkest-gray {
+    border-color: rgb(34,34,34);
 }
 
 .h1-header {
     font-weight: 100;
-
     text-transform: uppercase;
+}
+
+.big-h2 {
+    font-size: 52px;
+
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .about-wrap {
@@ -382,6 +423,38 @@ body {
     text-align: center;
 }
 
+.faq-wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 468px) {
+    .faq-wrap {
+        padding-left: 50px;
+    }
+}
+
+.faq-question {
+    font-size: 19px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.faq-answer {
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    
+    padding-left: 15px;
+
+    max-width: 90%;
+    
+    word-wrap: break-word; 
+
+    border-left: 2px solid white;
+}
+
 /* Skin */
 .skew {
     transform: skewY(2deg);
@@ -395,9 +468,8 @@ body {
     background-attachment: fixed;
 }
 
-.bg-gray-grad{
+.bg-gray-darkest {
     background: rgb(34,34,34);
-    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(35,35,35,1) 35%, rgba(34,34,34,1) 100%);
 }
 
 .shadow-text-black {
@@ -452,6 +524,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.white-border {
-    border: 1px solid white;
+.border-white {
+    border: 2px solid white;
 }
