@@ -106,14 +106,6 @@ body {
 
 @media (min-width: 768px) {
     .nav-link-wrapper {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 768px) {
-    .nav-wrapper {
-        margin-top: 0;
         margin-bottom: 0;
     }
 }
@@ -125,10 +117,6 @@ body {
     text-decoration: none;
 
     font-size: 22px;
-}
-
-.nav-link:hover {
-    margin-top: -2px;
 }
 
 .hamburger-absolute {
@@ -187,16 +175,16 @@ body {
 }
 
 .nav-hamburger-input:checked ~ .nav-hamburger-toggle-area {
-    display: block;
+    display: flex;
 }
 
 @media (min-width: 768px) {
     .nav-hamburger-input ~ .nav-hamburger-toggle-area {
-        display: block;
+        display: flex;
     }
 
     .nav-hamburger-input:checked ~ .nav-hamburger-toggle-area {
-        display: block;
+        display: flex;
     }
 }
 
@@ -309,8 +297,35 @@ body {
     margin-top: 50px;
     margin-bottom: 80px; /* more because of the skew */
 
-    width: 90%;
+    width: 80%;
     max-width: 1000px;
+
+    padding: 20px;
+}
+
+/* These Pseudo elemnets are there to cut the border */
+.cutter {
+    content: "";
+
+    box-sizing: border-box;
+
+    position: absolute;
+
+    height: calc(100% + 2px);
+    width: 80%;
+
+    top: -1px;
+
+    /* center horizontally */
+    left: 10%;
+    right: 10%;
+
+    z-index: 1;
+
+    /* Put to Skin area */
+
+    border-bottom: 8px solid #373737;
+    border-top: 8px solid #373737;
 }
 
 .h1-header {
@@ -413,12 +428,10 @@ body {
 
 .bg-dark-gray {
     background: #373737; /* fallback */
-    background: radial-gradient(circle, #373737,#292929);
 }
 
 .bg-light-gray {
     background: #676767; /* fallback */
-    background: radial-gradient(circle,#575757, #676767);
 }
 
 .bg-white {
@@ -437,4 +450,8 @@ body {
 
 .font-open-sans {
     font-family: 'Open Sans', sans-serif;
+}
+
+.white-border {
+    border: 1px solid white;
 }
