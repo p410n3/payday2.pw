@@ -97,9 +97,6 @@ body {
 .nav-brand {
     padding-right: 30px;
     padding-left: 10px;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .nav-link-wrapper {
@@ -131,7 +128,10 @@ body {
     height: 20px;
     width: 26px;
     padding: 0;
-    margin: 28px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-right: 36px;
+    margin-left: 36px;
 }   
 
 .nav-hamburger-input {
@@ -369,6 +369,9 @@ body {
 .h1-header {
     font-weight: 100;
     text-transform: uppercase;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .big-h2 {
@@ -447,7 +450,7 @@ body {
 .faq-answer {
     margin-top: 0px;
     margin-left: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     
     padding-left: 15px;
 
