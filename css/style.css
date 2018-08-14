@@ -101,10 +101,6 @@
 }
 
 @media (min-width: 468px) {  
-    .header-text {
-        flex-direction: row-reverse;
-    }
-    
     .header-text-p {
         font-size: 50px;
     }
@@ -115,6 +111,9 @@
 }
 
 @media (min-width: 768px) {  
+    .header-text {
+        flex-direction: row-reverse;
+    }
     
     .header-text-p {
         font-size: 66px;
