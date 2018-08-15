@@ -173,6 +173,47 @@ body {
     is :checked at mobile 
 */
 
+
+/* 
+   Sadly this method requires the markup to be
+   in an specific order
+
+   <input type="checkbox" class="nav-hamburger-input hamburger-absolute">
+
+    <div class="nav-hamburger hamburger-absolute">
+        <div class="nav-hamburger-logo">
+            <span class="hamburger-line bg-white shadow-box-black"></span>
+            <span class="hamburger-line bg-white shadow-box-black"></span>
+            <span class="hamburger-line bg-white shadow-box-black"></span>
+        </div>
+    </div>
+ */
+.nav-hamburger-input:checked  ~ .nav-hamburger 
+> .nav-hamburger-logo {
+    justify-content: center;
+}
+
+.nav-hamburger-input:checked  ~ .nav-hamburger 
+> .nav-hamburger-logo 
+> .hamburger-line:nth-child(1) {
+    transform: rotateZ(45deg);
+}
+
+.nav-hamburger-input:checked  ~ .nav-hamburger 
+> .nav-hamburger-logo 
+> .hamburger-line:nth-child(2) {
+    display: none;
+}
+
+.nav-hamburger-input:checked  ~ .nav-hamburger 
+> .nav-hamburger-logo 
+> .hamburger-line:nth-last-child(1) {
+    transform: rotateZ(-45deg);
+    /* height of the hamburger line */
+    margin-top: -4px;
+}
+
+
 .nav-hamburger-input ~ .nav-hamburger-toggle-area {
     display: none;
 }
@@ -381,7 +422,7 @@ body {
     margin-bottom: 0;
 }
 
-.about-wrap {
+.space-wrap {
     padding-top: 20px; 
     justify-content: space-around;
 }
@@ -458,7 +499,7 @@ body {
     
     word-wrap: break-word; 
 
-    border-left: 2px solid white;
+    border-left: 2px solid #0593e9;
 }
 
 /* Skin */
