@@ -37,6 +37,8 @@ body {
 .row-responsive {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 @media (min-width: 468px) {
@@ -426,6 +428,15 @@ body {
     margin-bottom: 0;
 }
 
+.med-h2 {
+    font-size: 38px;
+
+    margin-top: 15px;
+    margin-bottom: 0;
+
+    font-weight: 100;
+}
+
 .space-wrap {
     padding-top: 50px; 
     justify-content: space-around;
@@ -459,6 +470,51 @@ body {
     font-weight: 100;
 }
 
+.download-wrap {
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.download {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 200px;
+    padding: 20px;
+    word-break: break-word;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media(min-width: 768px) {
+    .download {
+        width: 48%;
+    }
+}
+
+@media(min-width: 920px) {
+    .download {
+        width: 31%;
+    }
+}
+
+.download-button {
+    text-decoration: none;
+    border-radius: 5px;
+    width: auto;
+
+    padding: 10px;
+}
+
+.spacer {
+    height: 0;
+    margin: 50px;
+}
+
 .footer {
     position: relative;
     height: 80px;
@@ -470,11 +526,8 @@ body {
     margin-top: 30px;
 }
 
-.footer-link {
-    text-decoration: none;
-    
-    padding-left: 10px;
-    padding-right: 10px;
+.footer-text {
+    margin-bottom: 0;
 }
 
 .text-center {
@@ -546,6 +599,10 @@ body {
     color: #0593e9;
 }
 
+.text-light-gray {
+    color: #aaaaaa;
+}
+
 .hover-light-gray:hover {
     color: #aaaaaa;
 }
@@ -566,6 +623,14 @@ body {
 
 .bg-white {
     background-color: white;
+}
+
+.bg-black-alpha {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.bg-pd2-blue {
+    background-color: #0593e9;
 }
 
 /* ToDO: Add font fallbacks */

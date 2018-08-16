@@ -36,7 +36,9 @@
             <div class="nav-link-wrapper nav-hamburger-toggle-area vertical-center">
                 <div class="row-responsive">
                     <a href="#about" class="nav-link text-white hover-light-gray">About</a>
+                    <a href="#download" class="nav-link text-white hover-light-gray">Downloads</a>
                     <a href="#faq" class="nav-link text-white hover-light-gray">F.A.Q</a>
+                    <a href="#contact" class="nav-link text-white hover-light-gray">Contact</a>
                 </div>
             </div>
         </div>
@@ -124,7 +126,7 @@
             </div>
         </div>
 
-        <div class="content col-center bg-dark-gray skew" id="faq">
+        <div class="content col-center bg-dark-gray skew" id="download">
             <div class="content-wrap unskew border-white cutted-dark-gray">
                 <!-- Cutter boxes, those make the outline effect -->
                     <div class="cutted border-color-dark-gray cutted-top-bot "></div>
@@ -135,14 +137,23 @@
                 </h2>
 
                 <p class="font-open-sans text-white text-center">
-                    <?php
-                       require_once('./php/list_mods.php'); 
-                    ?>
+                    <div class="">
+                        <?php
+                            require_once './php/list_mods.php';
+                            echo '<h2 class="med-h2 text-white shadow-text-black font-oswald">Client mods</h2>';
+                            loopAndPrintFiles("./mods/client");
+
+                            echo '<div class="spacer full-width"></div>';
+
+                            echo '<h2 class="med-h2 text-white shadow-text-black font-oswald">Host mods</h2>';
+                            loopAndPrintFiles("./mods/host");
+                        ?>
+                    </div>
                 </p>
             </div>
         </div>
 
-        <div class="content col-center bg-darkest-gray skew" id="download">
+        <div class="content col-center bg-darkest-gray skew" id="faq">
             <div class="content-wrap unskew border-white cutted-darkest-gray">
                 <!-- Cutter boxes, those make the outline effect -->
                     <div class="cutted border-color-darkest-gray cutted-top-bot "></div>
@@ -310,8 +321,11 @@
         </div>
 
         <div class="row-center">
-            <div class="footer vertical-center bg-gray-darkest font-open-sans shadow-box-black">
-
+            <div class="col footer bg-gray-darkest font-open-sans shadow-box-black">
+                <p class="text-light-gray footer-text">
+                    Mods and Website Owner is GAB - &copy; 2018<br />
+                    Web-design and development by p410n3
+                </p>
             </div>
         </div>
     </div>
