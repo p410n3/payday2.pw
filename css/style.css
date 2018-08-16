@@ -174,13 +174,6 @@ body {
 }
 
 /* 
-    nav-hamburger-toggle-area
-    gets displayed when the hamburger 
-    is :checked at mobile 
-*/
-
-
-/* 
    Sadly this method requires the markup to be
    in an specific order
 
@@ -219,6 +212,11 @@ body {
     margin-top: -4px;
 }
 
+/* 
+    nav-hamburger-toggle-area
+    gets displayed when the hamburger 
+    is :checked at mobile 
+*/
 
 .nav-hamburger-input ~ .nav-hamburger-toggle-area {
     display: none;
