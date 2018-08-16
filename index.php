@@ -80,12 +80,12 @@
 
                 <p class="font-open-sans text-white text-center">
                     Some act as cheats and some don't. Just take a look around.
-                    All mods downloadable here are undetected, unless stated otherwise.
+                    <!--All mods downloadable here are undetected, unless stated otherwise.-->
                     
                     They are coded in LUA and utilize
                     <a class="text-pd2-blue hover-light-gray" href="https://github.com/JamesWilko/Payday-2-BLT">PayDay2 BLT</a>.
                     This allows for direct modification of the games internal logics,
-                    making all of this possible in the first place,
+                    making all of this possible in the first place.
 
                     There's a mod missing that you want? Just contact me.
                 </p>
@@ -125,10 +125,28 @@
         </div>
 
         <div class="content col-center bg-dark-gray skew" id="faq">
-            <div class="content-wrap unskew border-white cutted-darkest-gray">
+            <div class="content-wrap unskew border-white cutted-dark-gray">
                 <!-- Cutter boxes, those make the outline effect -->
                     <div class="cutted border-color-dark-gray cutted-top-bot "></div>
                     <div class="cutted cutted-left-right border-color-dark-gray"></div>
+                <!-- End of Cutter boxes -->
+                <h2 class="big-h2 h1-header col-center shadow-text-black font-oswald text-white text">
+                    Download
+                </h2>
+
+                <p class="font-open-sans text-white text-center">
+                    <?php
+                       require_once('./php/list_mods.php'); 
+                    ?>
+                </p>
+            </div>
+        </div>
+
+        <div class="content col-center bg-darkest-gray skew" id="download">
+            <div class="content-wrap unskew border-white cutted-darkest-gray">
+                <!-- Cutter boxes, those make the outline effect -->
+                    <div class="cutted border-color-darkest-gray cutted-top-bot "></div>
+                    <div class="cutted cutted-left-right border-color-darkest-gray"></div>
                 <!-- End of Cutter boxes -->
 
                 <h2 class="big-h2 h1-header col-center shadow-text-black font-oswald text-white text-center">
@@ -158,8 +176,10 @@
                     
                     <blockquote class="faq-answer font-open-sans text-white">
                         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=512690479" class="text-pd2-blue hover-light-gray">
-                            https://steamcommunity.com/sharedfiles/filedetails/?id=512690479
-                        </a>                   
+                            Here 
+                        </a>     
+                        
+                        are some Instructions.
                     </blockquote>
                     
                     <p class="faq-question text-white font-open-sans shadow-text-black">
@@ -175,8 +195,8 @@
                     </p>
                     
                     <blockquote class="faq-answer font-open-sans text-white">
-                        With to the help of <a href="https://palone.top" class="text-pd2-blue hover-light-gray">p410n3.</a>
-                        who made this website. The files are hosted on a cloud.
+                        With to the help of <a href="https://palone.top" class="text-pd2-blue hover-light-gray">p410n3</a>
+                        who made this website.
                     </blockquote>
 
                     <p class="faq-question text-white font-open-sans shadow-text-black">
@@ -184,9 +204,9 @@
                     </p>
                     
                     <blockquote class="faq-answer font-open-sans text-white">
-                            Pretty much no, you can only get banned from the official PAYDAY 2 
-                            Steam group, but that's easily bypassable and doesn't matter for the main game anyways.<br />
-                            TL;DR no VAC & game bans.
+                        Pretty much no, you can only get banned from the official PAYDAY 2 
+                        Steam group, but that's easily bypassable and doesn't matter for the main game anyways.<br />
+                        TL;DR no VAC & game bans.
                     </blockquote>
 
                     <p class="faq-question text-white font-open-sans shadow-text-black"> 
@@ -243,26 +263,6 @@
                         I won't risk just to infect a small amount of users.
                     </blockquote>
                 </div>
-            </div>
-        </div>
-
-        <div class="content col-center bg-darkest-gray skew" id="download">
-            <div class="content-wrap unskew border-white cutted-dark-gray">
-                <!-- Cutter boxes, those make the outline effect -->
-                    <div class="cutted border-color-darkest-gray cutted-top-bot "></div>
-                    <div class="cutted cutted-left-right border-color-darkest-gray"></div>
-                <!-- End of Cutter boxes -->
-                <h2 class="big-h2 h1-header col-center shadow-text-black font-oswald text-white text">
-                    Download
-                </h2>
-
-                <p class="font-open-sans text-white text-center">
-                    <!-- start slipsum code -->
-
-                    Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
-
-                    <!-- end slipsum code -->
-                </p>
             </div>
         </div>
 
