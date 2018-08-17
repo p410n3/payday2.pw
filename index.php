@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GAB's PD2 Mods</title>
+    <meta name="description"
+          content="Extensive collection of PayDay2 mods to always make your heists fun and successful. Provided by gab, free and undtected."/>
+    <title>GAB's PD2 Mods - to enhance your game</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
@@ -33,7 +35,7 @@
                 </h1>
             </div>
     
-            <div class="nav-link-wrapper nav-hamburger-toggle-area vertical-center">
+            <div class="nav-link-wrapper nav-hamburger-toggle-area vertical-center fast-fade-in">
                 <div class="row-responsive">
                     <a href="#about" class="nav-link text-white hover-light-gray">About</a>
                     <a href="#download" class="nav-link text-white hover-light-gray">Downloads</a>
@@ -72,7 +74,7 @@
                 <p class="font-open-sans text-white text-center">    
                     Welcome to Gab's PAYDAY 2 mod collection.
                 
-                    Here you can download all of my PAYDAY 2 Mods. 
+                    Here you can download all of my PAYDAY 2 Mods to enhance your game.
                 </p>
                 
                 <p class="font-open-sans text-pd2-blue text-center shadow-text-black">
@@ -133,23 +135,127 @@
                     <div class="cutted cutted-left-right border-color-dark-gray"></div>
                 <!-- End of Cutter boxes -->
                 <h2 class="big-h2 h1-header col-center shadow-text-black font-oswald text-white text">
-                    Download
+                    Downloads
                 </h2>
+                <?php require_once './php/list_mods.php'; ?>
 
-                <p class="font-open-sans text-white text-center">
-                    <div class="">
-                        <?php
-                            require_once './php/list_mods.php';
-                            echo '<h2 class="med-h2 text-white shadow-text-black font-oswald">Client mods</h2>';
-                            loopAndPrintFiles("./mods/client");
+                <div class="accordion-wrap">
+                    <input id="anti_modding_detection" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
 
-                            echo '<div class="spacer full-width"></div>';
+                    <p class="accordion-header"><label for="anti_modding_detection" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Client - Anti modding detection
+                    </label></p>
 
-                            echo '<h2 class="med-h2 text-white shadow-text-black font-oswald">Host mods</h2>';
-                            loopAndPrintFiles("./mods/host");
-                        ?>
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/anti_modding_detection"); ?>
                     </div>
-                </p>
+                </div>
+
+                <div class="accordion-wrap">
+                    <input id="client_crime_spree" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
+
+                    <p class="accordion-header"><label for="client_crime_spree" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Client - Crime Spree
+                    </label></p>
+
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/client_crime_spree"); ?>
+                    </div>
+                </div>
+
+                <div class="accordion-wrap">
+                    <input id="client_free_stuff" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
+
+                    <p class="accordion-header"><label for="client_free_stuff" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Client - Get Free Stuff
+                    </label></p>
+
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/client_free_stuff"); ?>
+                    </div>
+                </div>
+
+                <div class="accordion-wrap">
+                    <input id="client_in_game_mods" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
+
+                    <p class="accordion-header"><label for="client_in_game_mods" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Client - In-game modification
+                    </label></p>
+
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/client_in_game_mods"); ?>
+                    </div>
+                </div>
+
+                <div class="accordion-wrap">
+                    <input id="client_perk_decks" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
+
+                    <p class="accordion-header"><label for="client_perk_decks" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Client - Perk Decks
+                    </label></p>
+
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/client_perk_decks"); ?>
+                    </div>
+                </div>
+
+                <div class="accordion-wrap">
+                    <input id="client_safe_related" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
+
+                    <p class="accordion-header"><label for="client_safe_related" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Client - Safe modifications
+                    </label></p>
+
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/client_safe_related"); ?>
+                    </div>
+                </div>
+
+                <div class="accordion-wrap">
+                    <input id="host_auto_respawn" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
+
+                    <p class="accordion-header"><label for="host_auto_respawn" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Host - Auto Respawn
+                    </label></p>
+
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/host_auto_respawn"); ?>
+                    </div>
+                </div>
+
+                <div class="accordion-wrap">
+                    <input id="host_crime_spree" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
+
+                    <p class="accordion-header"><label for="host_crime_spree" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Host - Crime Spree
+                    </label></p>
+
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/host_crime_spree"); ?>
+                    </div>
+                </div>
+
+                <div class="accordion-wrap">
+                    <input id="host_misc" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
+
+                    <p class="accordion-header"><label for="host_misc" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Host - Misc
+                    </label></p>
+
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/host_misc"); ?>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -221,7 +327,7 @@
                     </blockquote>
 
                     <p class="faq-question text-white font-open-sans shadow-text-black"> 
-                        Why do I get kicked everytime I join a lobby? / Why do my friends see CHEATER above my name?
+                        Why do I get kicked every time I join a lobby? / Why do my friends see CHEATER above my name?
                     </p>
                     
                     <blockquote class="faq-answer font-open-sans text-white">

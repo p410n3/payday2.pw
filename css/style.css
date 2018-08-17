@@ -425,10 +425,10 @@ body {
 }
 
 .med-h2 {
-    font-size: 38px;
+    font-size: 32px;
 
     margin-top: 15px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 
     font-weight: 100;
 }
@@ -496,6 +496,11 @@ body {
     .download {
         width: 31%;
     }
+
+    .download-wrap:after {
+        content: "";
+        width: 31%;
+    }
 }
 
 .download-button {
@@ -506,24 +511,88 @@ body {
     padding: 10px;
 }
 
-.spacer {
-    height: 0;
-    margin: 50px;
+.accordion-wrap {
+    position: relative;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    margin-left: 40px; /* width of accordion-plus + margin + a bit extra for space */
+    margin-bottom: 0;
+
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.accordion-input {
+    position: absolute;
+
+    padding: 5px;
+    box-sizing: border-box;
+
+    top: 8px;
+
+    left: 20px;
+
+    /* height and width should be accordion-plus width / height + its margin times 2 */
+    height: 30px;
+    width: 30px;
+
+    z-index: 1;
+
+    opacity: 0;
+}
+
+.accordion-plus {
+    position: absolute;
+
+    margin: 5px;
+    top: 8px;
+
+    left: 20px;
+
+    height: 20px;
+    width: 20px;
+
+    font-size: 22px;
+
+    border-radius: 50%;
+}
+
+.accordion-plus:after {
+    content: "+";
+    margin-top: -2px; /* Ugly fix; the "+" is not centered */
+}
+
+.accordion-input:checked ~ .accordion-plus:after {
+    content: "–";
+    margin-top: -6px; /* Ugly fix; the "-" is not centered */
+}
+
+.accordion-toggle-area {
+    display: none;
+}
+
+.accordion-input:checked ~ .accordion-toggle-area {
+    display: block;
 }
 
 .footer {
     position: relative;
-    height: 80px;
+    min-height: 80px;
 
     width: 100%;
     padding-left: 10%;
     padding-right: 10%; 
 
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .footer-text {
     margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .text-center {
@@ -645,4 +714,18 @@ body {
 
 .border-white {
     border: 2px solid white;
+}
+
+.hover-pointer {
+    cursor: pointer;
+}
+
+.fast-fade-in {
+    animation-name: fade-in;
+    animation-duration: 350ms;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 100;}
 }
