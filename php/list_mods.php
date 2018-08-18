@@ -10,13 +10,13 @@ function loopAndPrintFiles($dirName) {
             if ('..' === $file) continue;
 
             echo '<div class="download shadow-box-black bg-black-alpha">';
-                echo '<p class="font-open-sans text-pd2-blue shadow-text-black">' . $file . '</p>';
+                echo '<p class="font-open-sans text-pd2-blue shadow-text-black"><b>' . $file . '</b></p>';
                 echo '<a class="text-white font-open-sans hover-gray download-button bg-pd2-blue shadow-box-black" href="'
                         . $dirName
                         . '/'
                         .  $file
                         . '" >'
-                        . 'DOWNLOAD' .
+                        . '<i class="fas fa-download download-text"></i> DOWNLOAD' .
                     '</a>';
             echo '</div>';
         }
