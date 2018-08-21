@@ -4,9 +4,9 @@ A small website I made for a friend so he can show off some of his work.
 
 ## What is this?
 
-This is the repository for the Website https://payday2.pw. The website was made for a nice guy that offered my his self made Payday2 mods. He gave me a link to an open dropbox, and as I wanted to do an CSS-only project at the time I asked him If he wants a website.
+This is the repository for the Website https://payday2.pw. The website was made for a nice guy that offered me his self made Payday2 mods. He gave me a link to an open dropbox, and as I wanted to do an CSS-only project at the time, I asked him If he wants a website.
 
-There is a little PHP script that loops through given folders and prints HTML including a download link, so GAB (my friend) can move, create and delete downloads without touching code at all.
+There is a little PHP script that loops through given folders and prints HTML including a download link, so GAB (my friend) can move create and delete downloads without touching code at all.
 
 The mods folder is empty, because it is not my code!
 
