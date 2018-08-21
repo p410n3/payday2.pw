@@ -8,8 +8,8 @@ This is the repository for the Website https://payday2.pw. The website was made 
 
 There is a little PHP script that loops through given folders and prints HTML including a download link, so GAB (my friend) can move create and delete downloads without touching code at all.
 
-The mods folder is empty, because it is not my code!
-
+The mods folder is empty, because it is not my code! The mods are found here: 
+https://github.com/GABRlEL/payday2.pw-Mods
 ## Where is the JavaScript?
 
 So this website was made *without any JavaScript*. I have done that to further improve my knowledge of CSS and to experiment with things like CSS only navbars, accordions and playing around with pseudo elements.
