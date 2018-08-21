@@ -14,12 +14,12 @@ The mods folder is empty, because it is not my code!
 
 So this website was made *without any JavaScript*. I have done that to further improve my knowledge of CSS and to experiment with things like CSS only navbars, accordions and playing around with pseudo elements.
 
-I also ised the [OOCSS](https://github.com/stubbornella/oocss/wiki) methodology, to make the CSS scalable and develop without any preprocessor without having dirty code. I will probably write an article about OOCSS in my blog sooner or later.
+I also used the [OOCSS](https://github.com/stubbornella/oocss/wiki) methodology, to make the CSS scalable and develop in vanilla CSS without having dirty *append only* type code. I will probably write an article about OOCSS in my blog sooner or later.
 
-I have learned a couple things: 
+I have learned a couple things doing that: 
 
 - OOCSS is cool, but a hassle to get started with. Still worth it
-- Using JS for things like the navbar is the cleaner and faster approach. CSS only solutions are fine and all, but the markup gets messy and you fiddle a lot with positionings and pseudo elements. Using  ` element.innerHTML = "+"; ` is way more straightforward then modyfing the  ` content: "+"; ` of variosu pseudo elements with 3 line long selectors. By splitting that more the markup comes out cleaner and positioning is way easier, as the CSS solutions include absolute positionid and invisible input elements. Was still fun to do that in CSS though. 
+- Using JS for things like the navbar is the cleaner and faster approach. CSS only solutions are fine and all, but the markup gets messy and you fiddle a lot with positionings and pseudo elements. Using  ` element.innerHTML = "+"; ` is way more straightforward then modyfing the  ` content: "+"; ` of various pseudo elements with 3 line long selectors. By splitting that more the markup comes out cleaner and positioning is way easier, as the CSS solutions include absolute positioned and invisible input elements. Was still fun to do that in CSS though. 
 
 ## Anything else?
 
