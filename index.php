@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
-          content="Extensive collection of PayDay2 mods to always make your heists fun and successful. Provided by gab, free and undtected."/>
+          content="Extensive collection of PAYDAY 2 mods to always make your heists fun and successful. Provided by Gab, free and undetected."/>
     <title>GAB's PD2 Mods - to enhance your game</title>
 
     <!-- https://www.sitelocity.com/critical-path-css-generator -->
@@ -29,7 +29,7 @@
     
             <div class="nav-brand">
                 <h1 class="h1-header shadow-text-black font-oswald text-white">
-                    Gab's PayDay 2 mods
+                    Gab's PAYDAY 2 mods
                 </h1>
             </div>
     
@@ -85,11 +85,11 @@
                     <!--All mods downloadable here are undetected, unless stated otherwise.-->
                     
                     They are coded in LUA and utilize
-                    <a class="text-pd2-blue hover-light-gray" href="https://github.com/JamesWilko/Payday-2-BLT">PayDay2 BLT</a>.
+                    <a class="text-pd2-blue hover-light-gray" href="https://github.com/JamesWilko/Payday-2-BLT">PAYDAY 2 BLT</a>.
                     This allows for direct modification of the games internal logics,
                     making all of this possible in the first place.
 
-                    There's a mod missing that you want? Just contact me.
+                    There's a mod missing that you want or a mod doesn't work? Just contact me.
                 </p>
 
                 <div class="row-responsive-xl all-center space-wrap text-white"> 
@@ -215,6 +215,19 @@
                     </div>
                 </div>
 
+				<div class="accordion-wrap">
+                    <input id="client_detected" type="checkbox" class="hover-pointer accordion-input">
+                    <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
+
+                    <p class="accordion-header"><label for="client_detected" class="hover-pointer med-h2 text-white shadow-text-black font-oswald">
+                        Client - Detected
+                    </label></p>
+
+                    <div class="accordion-toggle-area fast-fade-in">
+                        <?php loopAndPrintFiles("./mods/client_detected"); ?>
+                    </div>
+                </div>
+				
                 <div class="accordion-wrap">
                     <input id="host_auto_respawn" type="checkbox" class="hover-pointer accordion-input">
                     <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
@@ -274,7 +287,7 @@
                     </p>
 
                     <p class="faq-answer font-open-sans text-white">
-                        Yes, unless stated on the mods page.
+                        Yes, unless the mod is in the Detected section.
                     </p>
 
                     <p class="faq-question text-white font-open-sans shadow-text-black">
@@ -290,11 +303,7 @@
                     </p>
                     
                     <blockquote class="faq-answer font-open-sans text-white">
-                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=512690479" class="text-pd2-blue hover-light-gray">
-                            Here 
-                        </a>     
-                        
-                        are some Instructions.
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=512690479" class="text-pd2-blue hover-light-gray">Here</a> are some instructions.
                     </blockquote>
                     
                     <p class="faq-question text-white font-open-sans shadow-text-black">
@@ -310,7 +319,7 @@
                     </p>
                     
                     <blockquote class="faq-answer font-open-sans text-white">
-                        With to the help of <a href="https://palone.top" class="text-pd2-blue hover-light-gray">p410n3</a>
+                        With to the help of <a href="https://palone.top" class="text-pd2-blue hover-light-gray">p410n3</a>,
                         who made this website.
                     </blockquote>
 
@@ -321,7 +330,7 @@
                     <blockquote class="faq-answer font-open-sans text-white">
                         Pretty much no, you can only get banned from the official PAYDAY 2 
                         Steam group, but that's easily bypassable and doesn't matter for the main game anyways.<br />
-                        TL;DR no VAC & game bans.
+                        TL;DR: no VAC & game bans.
                     </blockquote>
 
                     <p class="faq-question text-white font-open-sans shadow-text-black"> 
@@ -374,8 +383,8 @@
                     <blockquote class="faq-answer font-open-sans text-white">
                         They don't. All of my mods are open source, just 
                         check yourself. Additionally I am a trusted middleman on 
-                        <a class="text-pd2-blue" href="https://high-minded.net/members/gab.41181/">High-Minded</a> 
-                        I won't risk just to infect a small amount of users.
+                        <a class="text-pd2-blue" href="https://high-minded.net/members/gab.41181/">High-Minded</a>, 
+                        which I won't risk just to infect a small amount of users.
                     </blockquote>
                 </div>
             </div>
@@ -392,10 +401,10 @@
                     Contact me
                 </h2>
 
-                <div class="row-responsive all-center space-wrap text-white width-80">
+                <div class="row-responsive-xxl all-center space-wrap text-white width-80">
                     <div class="col-center">
                         <a href="https://steamcommunity.com/id/P8C" class="text-white">
-                            <i class="fab fa-steam shadow-text-black text-center fa-med-icon"></i>
+                            <img src="/img/steam.png" alt="Steam logo" class="contact-logo">
                         </a>
                         
                         <h3 class="text-white font-open-sans shadow-text-black">
@@ -403,17 +412,27 @@
                         </h3>
                     </div>
                     <div class="col-center">
-                        <a href="https://t.me/bruzzzler" class="text-white">
-                            <i class="fab fa-telegram shadow-text-black text-center fa-med-icon"></i>
+                        <a href="https://t.me/Bruzzzler" class="text-white">
+                            <img src="/img/telegram.png" alt="Telegram logo" class="contact-logo">
                         </a>
 
                         <h3 class="text-white font-open-sans shadow-text-black">
                             TELEGRAM
                         </h3>
                     </div>
+
+                    <div class="col-center">
+                        <a href="https://high-minded.net/members/gab.41181/" class="text-white">
+                            <img src="/img/hm.png" alt="High-minded logo" class="contact-logo">
+                        </a>
+
+                        <h3 class="text-white font-open-sans shadow-text-black">
+                            HIGH-MINDED
+                        </h3>
+                    </div>
                     <div class="col-center">
                         <a href="mailto:gab@saru.ch" class="text-white">
-                            <i class="fas fa-envelope shadow-text-black text-center fa-med-icon"></i>
+                            <img src="/img/mail.png" alt="Mail logo" class="contact-logo">
                         </a>
 
                         <h3 class="text-white font-open-sans shadow-text-black">

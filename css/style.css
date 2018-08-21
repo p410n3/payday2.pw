@@ -49,12 +49,24 @@ body {
 }
 
 .row-responsive-xl {
+     display: flex;
+     flex-direction: column;
+ }
+
+@media (min-width: 768px) {
+    .row-responsive-xl {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.row-responsive-xxl {
     display: flex;
     flex-direction: column;
 }
 
-@media (min-width: 768px) {
-    .row-responsive-xl {
+@media (min-width: 920px) {
+    .row-responsive-xxl {
         display: flex;
         flex-direction: row;
     }
@@ -455,6 +467,7 @@ body {
 
 .fa-med-icon {
     font-size: 80px;
+    margin: 0;
 }
 
 .about-sub-text {
@@ -630,6 +643,10 @@ body {
 
     border-left: 2px solid #0593e9;
 }
+.contact-logo {
+    height: 115px;
+}
+
 
 /* Skin */
 .skew {
