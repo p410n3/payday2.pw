@@ -14,7 +14,7 @@
 
 <body>
 
-    <nav class=" nav-bar row-responsive bg-gray-darkest font-oswald text-white shadow-box-black">
+    <nav class="nav-bar row-responsive bg-gray-darkest font-oswald text-white shadow-box-black">
         <div class="nav-wrapper row-responsive-xl">
 
             <input type="checkbox" class="nav-hamburger-input hamburger-absolute">
@@ -26,13 +26,13 @@
                     <span class="hamburger-line bg-white shadow-box-black"></span>
                 </div>
             </div>
-    
+
             <div class="nav-brand">
                 <h1 class="h1-header shadow-text-black font-oswald text-white">
                     Gab's PAYDAY 2 mods
                 </h1>
             </div>
-    
+
             <div class="nav-link-wrapper nav-hamburger-toggle-area vertical-center fast-fade-in">
                 <div class="row-responsive">
                     <a href="#about" class="nav-link text-white hover-light-gray">About</a>
@@ -69,21 +69,21 @@
                     About
                 </h2>
 
-                <p class="font-open-sans text-white text-center">    
+                <p class="font-open-sans text-white text-center">
                     Welcome to Gab's PAYDAY 2 mod collection.
-                
+
                     Here you can download all of my PAYDAY 2 Mods to enhance your game.
                 </p>
-                
+
                 <p class="font-open-sans text-pd2-blue text-center shadow-text-black">
                     Completely <i>FREE</i> and <i>UNDETECTED</i> !
                 </p>
-                
+
 
                 <p class="font-open-sans text-white text-center">
                     Some act as cheats and some don't. Just take a look around.
                     <!--All mods downloadable here are undetected, unless stated otherwise.-->
-                    
+
                     They are coded in LUA and utilize
                     <a class="text-pd2-blue hover-light-gray" href="https://github.com/JamesWilko/Payday-2-BLT">PAYDAY 2 BLT</a>.
                     This allows for direct modification of the games internal logics,
@@ -92,7 +92,7 @@
                     There's a mod missing that you want or a mod doesn't work? Just contact me.
                 </p>
 
-                <div class="row-responsive-xl all-center space-wrap text-white"> 
+                <div class="row-responsive-xl all-center space-wrap text-white">
                     <div class="col-center">
                         <div class="about-icon fa-big-icon about-circle shadow-box-black">
                             <i class="fas fa-user-secret shadow-text-black"></i>
@@ -102,7 +102,7 @@
                             Safe
                         </h2>
                     </div>
-                        
+
                     <div class="col-center">
                         <div class="about-icon fa-big-icon about-circle shadow-box-black">
                             <i class="fas fa-coins shadow-text-black"></i>
@@ -227,7 +227,7 @@
                         <?php loopAndPrintFiles("./mods/client_detected"); ?>
                     </div>
                 </div>
-				
+
                 <div class="accordion-wrap">
                     <input id="host_auto_respawn" type="checkbox" class="hover-pointer accordion-input">
                     <div class="accordion-plus text-white all-center med-h2 font-open-sans  shadow-box-black border-white"></div>
@@ -293,7 +293,7 @@
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         Why don't you just upload your mods at modworkshop?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
                         Many of my mods are basically cheats, and therefore don't comply with their rules.
                     </blockquote>
@@ -301,15 +301,15 @@
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         How do you install PAYDAY 2 Mods?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
                         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=512690479" class="text-pd2-blue hover-light-gray">Here</a> are some instructions.
                     </blockquote>
-                    
+
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         What's the difference between Client-Mods and Host only-Mods?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
                         Client-Mods work no matter if you are playing in someone else's lobby or in your own. Host only-Mods require you to create the lobby.
                     </blockquote>
@@ -317,7 +317,7 @@
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         How do you provide all this content for free?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
                         With to the help of <a href="https://palone.top" class="text-pd2-blue hover-light-gray">p410n3</a>,
                         who made this website.
@@ -326,52 +326,52 @@
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         Can I get banned?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
-                        Pretty much no, you can only get banned from the official PAYDAY 2 
+                        Pretty much no, you can only get banned from the official PAYDAY 2
                         Steam group, but that's easily bypassable and doesn't matter for the main game anyways.<br />
                         TL;DR: no VAC & game bans.
                     </blockquote>
 
-                    <p class="faq-question text-white font-open-sans shadow-text-black"> 
+                    <p class="faq-question text-white font-open-sans shadow-text-black">
                         Why do I get kicked every time I join a lobby? / Why do my friends see CHEATER above my name?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
                         You are probably using a mod, which triggers the CHEATER tag.
                     </blockquote>
-                    
+
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         Can you upload a DLC unlocker?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
                         Just download
-                        <a class="text-pd2-blue" href="https://www.unknowncheats.me/forum/payday-2-a/185930-blt-selective-dlc-unlocker.html">this</a> 
+                        <a class="text-pd2-blue" href="https://www.unknowncheats.me/forum/payday-2-a/185930-blt-selective-dlc-unlocker.html">this</a>
                         and check all boxes in the mod settings. Keep in mind that this triggers the CHEATER tag.
                     </blockquote>
 
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         Why don't you put all of this in a single client?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
                         To keep it light, less buggy and make it easier to add / uninstall / modify single components.
                     </blockquote>
-                    
+
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         Why should I choose your mods over X?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
-                        Well, as said in the previous answer, these mods are light, easier to modify and 
+                        Well, as said in the previous answer, these mods are light, easier to modify and
                         might even contain features, which are premium only or not available in some cheats.
                     </blockquote>
 
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         (How) can I donate?
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
                         Sure, just <a href="#contact" class="text-pd2-blue hover-light-gray">contact me</a>.
                     </blockquote>
@@ -379,11 +379,11 @@
                     <p class="faq-question text-white font-open-sans shadow-text-black">
                         How can I trust your mods? They might contain malware!
                     </p>
-                    
+
                     <blockquote class="faq-answer font-open-sans text-white">
-                        They don't. All of my mods are open source, just 
-                        check yourself. Additionally I am a trusted middleman on 
-                        <a class="text-pd2-blue" href="https://high-minded.net/members/gab.41181/">High-Minded</a>, 
+                        They don't. All of my mods are open source, just
+                        check yourself. Additionally I am a trusted middleman on
+                        <a class="text-pd2-blue" href="https://high-minded.net/members/gab.41181/">High-Minded</a>,
                         which I won't risk just to infect a small amount of users.
                     </blockquote>
                 </div>
@@ -406,7 +406,7 @@
                         <a href="https://steamcommunity.com/id/P8C" class="text-white">
                             <img src="/img/steam.png" alt="Steam logo" class="contact-logo">
                         </a>
-                        
+
                         <h3 class="text-white font-open-sans shadow-text-black">
                             STEAM
                         </h3>
