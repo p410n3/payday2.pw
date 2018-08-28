@@ -1,4 +1,8 @@
 /* some document wide stuff */
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -740,6 +744,10 @@ body {
 .fast-fade-in {
     animation-name: fade-in;
     animation-duration: 350ms;
+}
+
+.link-no-underline {
+    text-decoration: none;
 }
 
 @keyframes fade-in {

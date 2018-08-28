@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
-          content="Extensive collection of PAYDAY 2 mods to always make your heists fun and successful. Provided by Gab, free and undetected."/>
+          content="Extensive collection of 100+ PAYDAY 2 mods to always make your heists fun and successful. Provided by Gab, free and undetected."/>
     <title>GAB's PD2 Mods - to enhance your game</title>
 
     <!-- https://www.sitelocity.com/critical-path-css-generator -->
@@ -28,9 +28,11 @@
             </div>
     
             <div class="nav-brand">
-                <h1 class="h1-header shadow-text-black font-oswald text-white">
-                    Gab's PAYDAY 2 mods
-                </h1>
+                <a href="#header" class="link-no-underline">
+                    <h1 class="h1-header shadow-text-black font-oswald text-white">
+                        Gab's PAYDAY 2 mods
+                    </h1>
+                </a>
             </div>
     
             <div class="nav-link-wrapper nav-hamburger-toggle-area vertical-center fast-fade-in">
@@ -44,9 +46,9 @@
         </div>
     </nav>
 
-    <div class="site-wrap bg-gray-darkest full-width">
+    <div class="site-wrap bg-gray-darkest full-width" id="header">
         <div class="header">
-            <div class="header-text">
+            <div class="header-text col">
                 <div class="col font-road-rage">
                     <p class="text-white header-text-p">
                         Gab's PD2
